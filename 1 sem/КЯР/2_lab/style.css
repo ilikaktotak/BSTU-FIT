@@ -1,0 +1,398 @@
+/* Общие стили */
+body {
+    font-family:Arial, sans-serif;
+    margin: 0;
+    background-color: #f5cdef; /* Светло-серый фон */
+}
+
+/* Стили для шапки */
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+      color: purple;
+      font-family: "Monotype Corsiva", serif;
+}
+
+
+
+
+
+
+
+
+/* Стили для баннера */
+.banner-container {
+    display: flex;
+    align-items: center;
+    min-height: 300px; /* Высота экрана минус высота шапки */
+    width: 100%;
+    height: 50vh;
+}
+.banner {
+    background-image: url('5337114744026430397_121.jpg'); /* Замените на путь к вашей картинке */
+    background-size: cover; /* Масштабирование изображения */
+    background-position: center; /* Центрирование изображения */
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 120px;
+    text-align: center;
+    max-width: 1300px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: white; /* Чтобы текст был виден на фоне картинки */
+    position: relative; /* Нужно для затемнения */
+    overflow: hidden; /* Обрезает содержимое, выходящее за границы */
+}
+
+.banner::before {
+    content: ""; /* Обязательно для псевдоэлемента */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Затемнение фона */
+    z-index: 1; /* Размещаем затемнение поверх изображения */
+}
+
+.banner > * {
+    position: relative;
+    z-index: 2; /* Размещаем текст и кнопку поверх затемнения */
+}
+
+.banner h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+ /* Стили для второй части страницы */
+.about-us {
+    display: flex; /* Располагаем контент и изображение рядом */
+    align-items: center; /* Выравниваем их по вертикали */
+    padding: 20px;
+    max-width: 1500px; /* Ограничиваем ширину секции */
+    margin: 20px auto; /* Центрируем секцию и добавляем отступы сверху и снизу */
+    background-color: #fff; /* Добавляем белый фон */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.about-us-content {
+    flex: 1; /* Занимает большую часть доступного пространства */
+    padding-right: 20px; /* Добавляем отступ справа от текста */
+    
+}
+
+.about-us-image {
+    flex: 1; /*  Занимает пространство, равное текстовому блоку */
+    max-width: 30%;  /* Ограничиваем максимальную ширину изображения */
+}
+
+.about-us-image img {
+    width: 100%; /*  Изображение занимает всю доступную ширину */
+    height: auto; /* Сохраняет пропорции */
+    border-radius: 8px;
+    object-fit: cover; /* Заполняет контейнер, обрезая, если нужно */
+}
+
+.about-us h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-bottom: 105px; 
+    color: rgb(0, 250, 154)
+}
+
+.about-us h3 {
+
+    font-size: 16pt;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    color: rgb(242, 250, 0)
+}
+
+.about-us #my_span {
+  text-decoration: line-through;
+
+}
+
+
+
+
+
+
+
+ /* Стили для третьей части страницы !!!!  ТРИ ОБЗАЦА  !!!!!   */
+.hit_sales {
+  width: 100%; /* Занимает всю ширину контейнера */
+  padding: 7px; /* Добавляем отступы вокруг всего блока */
+  text-align: center; /* Центрируем содержимое по умолчанию */
+}
+
+.hit_sales-content {
+    /* flex: 1;  Убрал flex, т.к. у нас теперь фиксированная структура */
+    padding-right: 0; /* Убрал отступ справа, т.к. теперь не нужно */
+
+}
+
+.hit_sales-content h2 {
+  text-align: center; /* Центрируем заголовок */
+}
+
+.hit_sales-container {
+  display: flex;          /* Выстраиваем товары в ряд */
+  justify-content: space-around; /* Равномерно распределяем товары по горизонтали */
+  align-items: flex-start;      /* Выравниваем товары по верху (если высота разная) */
+  gap: 20px;               /* Добавляем отступы между товарами */
+  width: 100%; /* Занимает всю ширину блока .hit_sales-content */
+  max-width: 1200px; /* Ограничиваем максимальную ширину контейнера с товарами */
+  margin: 0 auto; /* Центрируем контейнер с товарами по горизонтали */
+}
+
+.product {
+  width: 30%;           /* Задаем ширину для каждого товара (с учетом 3 в ряд) */
+  text-align: center;     /* Центрируем текст под картинкой */
+  padding: 40px;
+}
+
+.product img {
+  width: 100%;          /* Изображение занимает всю ширину контейнера .product */
+  height: auto;          /* Сохраняем пропорции изображения */
+  border-radius: 10px; /* Закругление углов  */
+  object-fit: cover;      /* Чтобы картинка заполняла контейнер без деформации */
+  aspect-ratio: 1/1;      /* Чтобы изображение было квадратным, даже если исходное не квадратное */
+}
+
+
+.product p:nth-child(3) { /* Ссылка на третий параграф */
+  font-weight: Arial, sans-serif;  
+  font-size: 16pt; /* Меньший размер шрифта для описания */
+  color: rgb(14, 14, 205) 
+}
+
+.product h3 {
+    font-size: 2em; 
+    color: rgb(246, 255, 0)
+}
+
+/* Медиа-запрос для адаптивности */
+@media (max-width: 768px) {
+  .hit_sales-container {
+    flex-direction: column; /* Выстраиваем товары в столбец на маленьких экранах */
+    align-items: center;   /* Центрируем товары по горизонтали */
+  }
+
+  .product {
+    width: 80%;            /* Увеличиваем ширину товара на маленьких экранах */
+  }
+}
+
+
+
+
+
+
+
+
+
+ /* Стили для четвертой части страницы !!!!! СПИСОК !!!!    */
+.information {
+    display: flex; /* Располагаем контент и изображение рядом */
+    align-items: center; /* Выравниваем их по вертикали */
+    padding: 20px;
+    max-width: 1500px; /* Ограничиваем ширину секции */
+    margin: 20px auto; /* Центрируем секцию и добавляем отступы сверху и снизу */
+    background-color: #fff; /* Добавляем белый фон */
+    border-radius: 10px;
+}
+
+.information-content {
+    flex: 1; /* Занимает большую часть доступного пространства */
+    padding-right: 20px; /* Добавляем отступ справа от текста */
+    
+}
+
+
+.information h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-bottom: 70px; 
+}
+
+.information ul {
+  list-style-type: disc; 
+  margin-left: 20px;    /* Отступ слева */
+  padding-left: 0;      /* Убираем стандартный отступ */
+  color: #333;        
+  font-family: Arial, sans-serif; 
+  margin-bottom: 28px;
+}
+
+.information li {
+  margin-bottom: 6px; 
+}
+
+.information ol {
+  list-style-type: decimal; /* Тип нумерации (decimal, lower-roman, upper-roman, lower-alpha, upper-alpha) */
+  margin-left: 20px;
+  padding-left: 0;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.information-image {
+    flex: 1; /*  Занимает пространство, равное текстовому блоку */
+    max-width: 30%;  /* Ограничиваем максимальную ширину изображения */
+}
+
+.information-image img {
+    width: 100%; /*  Изображение занимает всю доступную ширину */
+    height: auto; /* Сохраняет пропорции */
+    border-radius: 8px;
+    object-fit: cover; /* Заполняет контейнер, обрезая, если нужно */
+}
+
+
+.punkt1 > ul > li {
+  color: rgb(177, 24, 24);
+  font-family: "Times New Roman", serif;
+  font-size: 18pt;
+}
+
+.punkt2 > ul > li {
+  color: rgb(203, 203, 42);
+  font-family: "Times New Roman", serif;
+  font-size: 20pt;
+}
+
+.punkt3 > ul > li {
+  color: rgb(14, 84, 14);
+  font-family: "Times New Roman", serif;
+  font-size: 22pt;
+}
+
+.punkt4 > ul > li {
+  color: rgb(203, 140, 31);
+  font-family: "Times New Roman", serif;
+  font-size: 24pt;
+}
+
+
+ /* Стили для пятой части страницы   !!!!    ТАБЛИЦА  !!!!!   */
+.catalog {
+    display: flex; /* Располагаем контент и изображение рядом */
+    align-items: center; /* Выравниваем их по вертикали */
+    padding: 20px;
+    max-width: 1500px; /* Ограничиваем ширину секции */
+    margin: 20px auto; /* Центрируем секцию и добавляем отступы сверху и снизу */
+    background-color: #fff; /* Добавляем белый фон */
+    border-radius: 10px;
+}
+
+.catalogn-content {
+    flex: 1; /* Занимает большую часть доступного пространства */
+    padding-right: 20px; /* Добавляем отступ справа от текста */
+    
+}
+
+
+.catalog caption {
+    font-size: 1.5em;
+    margin-bottom: 17px; 
+}
+
+.catalog table {
+  color: rgb(255, 0, 0); /* Устанавливает цвет текста во всей таблице в синий */
+}
+ 
+.catalog th {
+  color: rgb(31, 150, 7);
+}
+
+.catalog td {
+  color: rgb(204, 0, 255); 
+}
+
+
+
+
+ /* Стили для    !!!!  ВТОРОЙ СТРАНИЦЫ   !!!!!   */
+
+.philosophy #special_h1 {
+  color: rgb(255, 255, 0);
+ }
+
+.philosophy #special_h2 {
+  color: rgb(0, 0, 194);
+ }
