@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <style>
+        div{
+            background-color: indigo;
+            width: 450px
+        }
+        h2{
+            color: white;
+            text-align: center;
+        }
+        label{
+            display: inline-block;
+            width: 22em;
+            vertical-align: top;
+            text-align: right;
+            margin-right: 15px;
+            color: white;
+            margin-top: 10px;
+        }
+        input{
+            margin-left: 10px;
+            width: 180px;
+        }
+        select{
+            margin-left: 10px;
+            width: 185px;
+        }
+        input[type="checkbox"]{
+            width: 20px;
+        }
+        input[type="button"]{
+            width: 100px;
+            height: 40px;
+            margin-bottom: 30px;
+            background-color: navy;
+            box-shadow: 0 0 4px white;
+            color: white;
+        }
+        input[type="text"]{
+            background-color: rgba(255, 255, 255, .5);
+            color: white;
+            box-shadow: inset 0 0 10px rgba(255, 255, 255, .75);
+            border-radius: 3px;
+        }
+        input[type="email"]{
+            background-color: rgba(255, 255, 255, .5);
+            color: rgb(255, 255, 255);
+            box-shadow: inset 0 0 10px rgba(255, 255, 255, .75);
+            border-radius: 3px;}
+
+        input[type="text"]:focus{
+            background-color: rgba(255, 255, 255, 1);
+            color: rgb(0, 0, 0); 
+        }
+    </style>
+    </head>
+    <body>
+        <div>
+            <h2>Регистрация постоянного клиента</h2>
+            
+            <label>Фамилия<input type="text"></label>
+            <label>Имя<input type="text"></label>
+            <label>Отчество<input type="text"></label>
+            <label>Возраст<input type="text"></label>
+            <label>Пол<input type="checkbox">Мужской<input type="checkbox">Женский</label>
+            <label>Email<input type="email"></label>
+            <label>Страна проживания<input type="text"></label>
+            <label>Как о нас узнали<select>Выберите вариант
+                <option value="">-- Выберите вариант --</option>
+                <option value="internet">Интернет</option>
+                <option value="tv">Телевизор</option>
+            </select></label>
+            <label>Дата заполнения<input type="date"></label>
+            <label><input type="button" value="Регистрация"><input type="button" value="Отмена"></label>
+        </div>
+    </body>
+</html>
+
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/table.css">
+    <title>Расписание</title>
+    <style>
+        td{
+            border:1px solid black;
+            height: 40px;
+            text-align: center;
+        }
+        th{
+            border:3px solid black;
+             height: 40px;
+             text-align: center;
+            }
+        table{
+            border:3px solid black;
+            border-collapse: collapse;
+        }
+        .td-low{
+            height: 20px;
+            text-align:left;
+            font-weight: normal;
+            border-block: 2px solid black;
+        }
+        .flexbox{
+            display: flex;
+            justify-content: center;
+        }
+        tr td:last-child:not(.td-low){
+            font-weight: bold;
+        }
+        .day{
+            font-weight: bold;
+            transform: rotate(-90deg);
+            border-right:3px solid black;
+            border-left:3px solid black;
+        }
+        .last{
+            border-bottom: 3px solid black;
+        }
+        table tr:first-child{
+            background-color: rgb(115, 127, 251);
+            border-bottom:3px solid black;
+        }
+        tr td:first-child{
+            background-color: rgb(255, 163, 241);
+            border-right:3px solid black;
+        }
+</style>
+</head>
+<body>
+    <div class="flexbox">
+
+        <table>
+            <caption>Ильина Дарья Сергеевна ПИ 1к 7гр</caption>
+                <tr>
+                    <th>Расписание</th>
+                    <th>Дни</th>
+                    <th>Часы</th>
+                </tr>
+                <tr>
+                    <td>лк 200-3а Математический анализ асс. Калиновская Е.В</td>
+                    <td class="day" rowspan="5">Понедельник</td>
+                    <td>14:40-16:05</td>
+                </tr>
+                <tr>
+                    <td>лк 200-3а Арифметико-логические основы вычислительных систем доц. Гринюк Д.А.</td>
+                    <td>16:25-17:50</td>
+                </tr>
+                <tr>
+                    <td>пз 110-4 Линейная алгебра и аналитическая геометрия</td>
+                    <td>18:00-19:25</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>19:35-21:00</td>
+                </tr>
+                <tr class="last">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="day" rowspan="5">Вторник</td>
+                    <td>14:40-16:05</td>
+                </tr>
+                <tr>
+                    <td>лр 204-1 Основы программной инженерии</td>
+                    <td>16:25-17:50</td>
+                </tr>
+                <tr>
+                    <td>лк 132-4 Основы программной инженерии ст. преп. Наркевич А.С</td>
+          <td>16:25-17:50</td>
+                </tr>
+                <tr>
+                    <td>лк 132-4 Основы программной инженерии ст. преп. Наркевич А.С</td>
+                    <td>18:00-19:25</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>19:35-21:00</td>
+                </tr>
+                <tr class="last">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>лк 200-3а Математический анализ асс. Калиновская Е.В</td>
+                    <td class="day" rowspan="6">Среда</td>
+                    <td>14:40-16:05</td>
+                </tr>
+                <tr>
+                    <td>лк 200-3а Основы алгоритмизации и программирования доц. Белодед Н.И.</td>
+                    <td>16:25-17:50</td>
+                </tr>
+                <tr>
+                    <td class="td-low">I пз 200-4 Математический анализ</td>
+ <td rowspan="2">18:00-19:25</td>
+                </tr>
+                <tr>
+                    <td class="td-low">II пз 110-4 Арифметико-логические основы вычислительных систем</td>
+                </tr>
+                <tr>
+                    <td>13:00 Физическая культура</td>
+                    <td>19:35-21:00</td>
+                </tr>
+                <tr class="last">
+                    <td>19:35 кураторский час 113-4</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td-low">I</td>
+                    <td class="day" rowspan="6">Четверг</td>
+                    <td rowspan="2">14:40-16:05</td>
+                </tr>
+                <tr>
+                    <td class="td-low">II пз 239- 2 общ. Англ.язык</td>
+                </tr>
+                <tr>
+                    <td>пз 105-4 Белорусский язык</td>
+                    <td>16:25-17:50</td>
+                </tr>
+                <tr>
+                    <td>лр 324-1 Основы алгоритмизации и программирования</td>
+                    <td>18:00-19:25</td>
+                </tr>
+                <tr>
+                    <td>лк 132 Компьютерные языки разметки ст. преп. Барковский Е.В</td>
+                    <td>19:35-21:00</td> 
+                </tr>
+                <tr class="last">
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td class="td-low">I пз 233-2 общ.Англ.язык</td>
+<td class="day" rowspan="6">Пятница</td>
+                    <td rowspan="2">14:40-16:05</td>
+                </tr>
+                <tr>
+                    <td class="td-low">II лк 200-3а Коррупция и её общественная опасность асс. Павлова В.В.</td>
+                </tr>
+                <tr>
+                    <td>лр 209-1 Компьютерные языки разметки</td>
+                    <td>16:25-17:50</td>
+                </tr>
+                <tr>
+                    <td>лк 408-2 Линейная алгебра и аналитическая геометрия асс. Калиновская Е.В</td>
+                    <td>18:00-19:25</td>
+                </tr>
+                <tr>
+                    <td>пз 233-2 общ.Английский язык</td>
+                    <td>19:35-21:00</td>
+                </tr>
+                <tr class="last"> 
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>пз 113-4 Математический анализ</td>
+                    <td class="day" rowspan="4">Суббота</td>
+                    <td>09:25-11:00</td>
+                </tr>
+                <tr>
+                    <td>Физическая культура</td>
+                    <td>11:25-12:50</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>13:00-14:25</td>
+                </tr>
+                <tr class="last">
+                    <td></td>
+                    <td>14:40-16-05</td>
+                </tr>
+        </table>
+    </div>
+</body>
+</html>
